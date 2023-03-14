@@ -1,0 +1,16 @@
+.container {
+    height: 100%;
+}
+
+.nav {
+    width: 150px;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.content {
+    padding: 16px;
+    background-color: white;
+}
