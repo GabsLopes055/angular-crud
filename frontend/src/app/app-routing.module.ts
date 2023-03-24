@@ -1,19 +1,47 @@
-import { NgModule } from '@angular/core';
+import { AppModule } from './app.module';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from "./view/home/home.component";
-import { ProdutcCrudComponent } from "./view/produtc-crud/produtc-crud.component";
+import { ProductCrudComponent } from "./view/product-crud/product-crud.component"
+import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { ProductReadComponent } from './components/products/product-read/product-read.component';
+import { ProductUpdateComponent } from './components/products/product-update/product-update.component'
+import { ProductDeleteComponent } from './components/products/product-delete/product-delete.component';
 
-const routes: Routes = [{
-  path: "",
-  component: HomeComponent
-},
-{
-  path: "products",
-  component: ProdutcCrudComponent
-}];
+const routes: Routes = [
+
+  {
+    path: "",
+    component: HomeComponent
+  },
+  {
+    path: "products",
+    component: ProductCrudComponent,
+
+  },
+  {
+    path: "products/create",
+    component: ProductCreateComponent
+  },
+  {
+    path: "products/list",
+    component: ProductReadComponent
+  },
+  {
+    path: "products/update/:id",
+    component: ProductUpdateComponent,
+
+  },
+  {
+    path: "products/delete/:id",
+    component: ProductDeleteComponent
+
+  }
+];
 
 @NgModule({
+  declarations: [],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

@@ -1,0 +1,31 @@
+<mat-divider class="line"></mat-divider>
+
+<mat-card class="card">
+
+    <mat-card-title class="title">Excluir Produto</mat-card-title>
+
+    <div *ngIf="product">
+        <form class="form" formDisable>
+            <mat-form-field appearance="outline">
+                <mat-label>Informe um nome</mat-label>
+                <input matInput type="text" required placeholder="Informe um nome" ngModel disabled [(ngModel)]="product.name" name="name" autocomplete="off">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Preço do Produto</mat-label>
+                <input matInput type="number" required placeholder="Preço (R$)" ngModel disabled [(ngModel)]="product.price" name="price" autocomplete="off">
+            </mat-form-field>
+        </form>
+    </div>
+
+</mat-card>
+
+<button mat-raised-button color="accent" (click)="cancell();">
+    Voltar
+</button>
+
+<button mat-raised-button color="primary" (click)="deleteProduct(product.id);">
+    Excluir
+</button>
+
+<mat-divider class="line"></mat-divider>

@@ -1,0 +1,33 @@
+<mat-divider class="line">
+
+</mat-divider>
+
+<div class="main">
+    <div class="product-create">
+        <mat-card class="product-create-card">
+            <mat-card-title class="card-title">
+                Criação de Novos Produtos
+            </mat-card-title>
+            <mat-card-content>
+                <button mat-raised-button color="accent" class="btn" (click)="navigateProductCreated()">
+                    Criar Produto<i class="material-icons ">add</i>
+                </button>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+    <div class="product-read">
+        <mat-card class="product-read-card">
+            <mat-card-title class="card-title">
+                Listagem de Produtos
+            </mat-card-title>
+            <mat-card-content class="product-read-card">
+                <button mat-raised-button color="accent" class="btn" (click)="listProduct()">
+                    Listar Produtos<i class="material-icons ">list</i>
+                </button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<mat-divider class="line"></mat-divider>

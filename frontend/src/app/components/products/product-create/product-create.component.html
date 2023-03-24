@@ -1,0 +1,29 @@
+<mat-divider class="line"></mat-divider>
+
+<mat-card class="card">
+
+    <mat-card-title class="title">Novo Produto</mat-card-title>
+
+    <form class="form">
+        <mat-form-field appearance="outline">
+            <mat-label>Informe um nome</mat-label>
+            <input matInput type="text" placeholder="Informe um nome" [(ngModel)]="product.name" name="name" autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Preço do Produto</mat-label>
+            <input matInput type="number" placeholder="Preço (R$)" [(ngModel)]="product.price" name="price" autocomplete="off">
+        </mat-form-field>
+    </form>
+
+</mat-card>
+
+<button mat-raised-button color="accent" (click)="cancel()">
+    Voltar
+</button>
+
+<button mat-raised-button color="primary" (click)="createdProduct()">
+    Cadastrar
+</button>
+
+<mat-divider class="line"></mat-divider>

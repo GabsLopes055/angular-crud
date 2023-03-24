@@ -1,0 +1,37 @@
+.line {
+    margin: 10px;
+}
+
+.main {
+    display: flex;
+}
+
+.product-create {
+    padding: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.product-read {
+    padding: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.product-create-card {
+    align-items: center;
+    height: auto;
+}
+
+.product-read-card {
+    align-items: center;
+    height: auto;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.card-title {
+    padding-top: 10px;
+}

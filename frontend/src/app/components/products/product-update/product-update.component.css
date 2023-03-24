@@ -1,0 +1,21 @@
+.line {
+    /* margin-top: 17px; */
+    margin-bottom: 17px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 17px 10px 17px 0;
+}
